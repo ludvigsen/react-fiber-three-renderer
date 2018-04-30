@@ -1,0 +1,17 @@
+{
+  "name": "react-fiber-three-renderer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/ReactThree",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "fbjs": "^0.8.16",
+    "officegen": "^0.4.5",
+    "react-reconciler": "^0.10.0",
+    "three": "^0.92.0"
+  }
+}
