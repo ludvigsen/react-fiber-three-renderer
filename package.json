@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/ReactThree",
-  "homepage": "https://github.com/ludvigsen/react-fiber-three-renderer"
+  "homepage": "https://github.com/ludvigsen/react-fiber-three-renderer",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
