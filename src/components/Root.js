@@ -9,6 +9,7 @@ class Root {
 
   // Add children
   appendChild(child) {
+    child.parent = this;
     this.children.push(child);
   }
 
@@ -23,7 +24,6 @@ class Root {
   render() {
     let scene, camera;
     this.children.forEach(c => {
-      console.log('child: ', c);
       if (c.type === 'scene') {
         scene = c;
         window.scene = scene;

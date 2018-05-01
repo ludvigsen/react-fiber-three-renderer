@@ -41,6 +41,7 @@ class Node {
   // Add children
   appendChild(child) {
     if (this.children && this.children.push) {
+      child.parent = this;
       this.children.push(child);
     }
     if (this.instance && this.instance.add) {
@@ -57,6 +58,9 @@ class Node {
   removeChild(child) {
     const index = this.children.indexOf(child);
     this.children.splice(index, 1);
+    if (this.instance && this.instance.remove) {
+      this.instance.remove(child.instance);
+    }
   }
 
   renderChildren() {

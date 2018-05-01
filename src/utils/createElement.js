@@ -7,7 +7,6 @@ import { Root, Node } from '../components';
  * @param {Object} root Root instance
  */
 export default function createElement(type, props, root) {
-  console.log('TYPE: ', type, props, root);
   switch (type) {
     case 'ROOT': {
       return new Root(props);
@@ -17,14 +16,4 @@ export default function createElement(type, props, root) {
     }
   }
   return null;
-  /*const COMPONENTS = {
-    ROOT: () => new WordDocument(),
-    TEXT: () => new Text(root, props),
-    DOCUMENT: () => new Document(root, props),
-    default: undefined,
-  };
-
-  return COMPONENTS[type]() || COMPONENTS.default;*/
 }
-
-// export { createElement };
